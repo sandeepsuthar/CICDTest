@@ -35,11 +35,11 @@ jobs:
       - name: Make gradlew executable (fix permission denied)
         run: chmod +x android/gradlew
 
-      - name: Build Android APK (debug)
-        run: npm run android:apk
+      - name: Build Android APK (UAT Release)
+        run: npm run build:uat:release
 
       - name: Upload APK
         uses: actions/upload-artifact@v4
         with:
-          name: app-debug-apk
-          path: android/app/build/outputs/apk/debug/app-debug.apk
+          name: app-uat-release-apk
+          path: android/app/build/outputs/apk/uat/release/app-uat-release.apk

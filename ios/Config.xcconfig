@@ -1,0 +1,10 @@
+//
+//  Config.xcconfig
+//  Boilerplate
+//
+//  Created by Sandeep on 10/03/24.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+#include? "tmp.xcconfig"
